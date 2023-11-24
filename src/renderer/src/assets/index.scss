@@ -88,7 +88,7 @@ nav {
   justify-content: flex-start;
   margin-bottom: 20px;
   border-bottom: 1px solid #ffffff16;
-  padding: 0;
+  padding: 0 10px;
   -webkit-app-region: drag;
 
   .right {
@@ -113,6 +113,7 @@ nav {
       height: 100%;
       width: 48px;
       cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
     }
 
     li:hover {

@@ -66,7 +66,7 @@ function createWindow() {
     frame: false,
     autoHideMenuBar: true,
     hasShadow: false,
-    titleBarStyle: 'hidden',
+    titleBarStyle: 'hidden-inset',
     titleBarOverlay: {
       height: 35,
     },
@@ -84,6 +84,7 @@ function createWindow() {
   if (process.platform === 'darwin') {
     mainWindow.setWindowButtonVisibility(true)
   }
+
 
   ipcMain.on('minimize', () => {
     mainWindow?.minimize()
