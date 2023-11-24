@@ -1,34 +1,26 @@
-# browser
+<a href="https://github.com/drissbenadjal"><img src="./build/screenshot.png" width="100%" /></a>
 
-An Electron application with React
+## AdaptiView App
 
-## Recommended IDE Setup
+Easily develop responsive websites.
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
-## Project Setup
-
-### Install
+You can download the project :
 
 ```bash
-$ npm install
+
+git clone --depth 1 --branch main https://github.com/drissbenadjal/AdaptiViewApp.git AdaptiViewApp
+cd AdaptiViewApp
+npm install
 ```
 
-### Development
+## Starting Development
+
+Start the app in the `dev` environment:
 
 ```bash
-$ npm run dev
+npm run dev
 ```
 
-### Build
+## Maintainers
 
-```bash
-# For windows
-$ npm run build:win
-
-# For macOS
-$ npm run build:mac
-
-# For Linux
-$ npm run build:linux
-```
+- [Driss Benadjal](https://github.com/drissbenadjal)
