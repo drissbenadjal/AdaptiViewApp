@@ -66,7 +66,8 @@ function createWindow() {
     frame: false,
     autoHideMenuBar: true,
     hasShadow: false,
-    titleBarStyle: 'hidden-inset',
+    titleBarStyle: 'hidden', // mac
+    // titleBarStyle: "hidden-inset", // windows
     titleBarOverlay: {
       height: 35,
     },

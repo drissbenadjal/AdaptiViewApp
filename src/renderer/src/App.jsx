@@ -21,6 +21,22 @@ function App() {
     } else {
       setIsMac(false)
     }
+
+    //bloquer le ctrl r
+    window.addEventListener("keydown", function (e) {
+      if (e.keyCode == 82 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        console.log('ctrl r')
+        e.preventDefault();
+      }
+      //si ctrl + shift + l on recharge les iframes
+      if (e.keyCode == 76 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey) && e.shiftKey) {
+        console.log('ctrl + shift + l')
+        const iframes = document.querySelectorAll('iframe')
+        iframes.forEach(iframe => {
+          iframe.contentWindow.location.reload()
+        })
+      }
+    }, false);
   }, [])
 
   const initialUrl = 'http://localhost:8000'
